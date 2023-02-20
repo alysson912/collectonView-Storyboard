@@ -25,7 +25,8 @@ class CustomCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
 
-    private func setupCell(nameImage: String){
+     func setupCell(nameImage: String){
         carImageView.image = UIImage(named: nameImage)
+         carImageView.contentMode = .scaleAspectFill
     }
 }
